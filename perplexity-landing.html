@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Perplexity — поисковый ИИ-движок, который дает точные ответы с источниками в реальном времени.">
+  <title>Perplexity — ответ начинается с поиска</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['DM Sans', 'ui-sans-serif', 'sans-serif'], display: ['Space Grotesk', 'ui-sans-serif', 'sans-serif'] },
+          colors: { ink: '#101311', mint: '#d9f99d', lime: '#b6f35b' }
+        }
+      }
+    };
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    html { scroll-behavior: smooth; }
+    body { background: #101311; }
+    .grid-noise { background-image: linear-gradient(rgba(217,249,157,.07) 1px, transparent 1px), linear-gradient(90deg, rgba(217,249,157,.07) 1px, transparent 1px); background-size: 44px 44px; }
+    .fade-up { animation: fade-up .75s both; }
+    @keyframes fade-up { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
+    .delay-1 { animation-delay: .12s; } .delay-2 { animation-delay: .22s; }
+  </style>
+</head>
+<body class="font-sans text-stone-100 antialiased selection:bg-lime selection:text-ink">
+  <header class="absolute inset-x-0 top-0 z-10">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between px-6 py-6 lg:px-8" aria-label="Основная навигация">
+      <a href="#top" class="font-display text-xl font-bold tracking-tight">perplexity<span class="text-lime">.</span></a>
+      <div class="hidden items-center gap-8 text-sm text-stone-400 md:flex">
+        <a class="transition-colors hover:text-white" href="#why">Преимущества</a>
+        <a class="transition-colors hover:text-white" href="#features">Возможности</a>
+        <a class="transition-colors hover:text-white" href="#pricing">Тарифы</a>
+      </div>
+      <a href="https://www.perplexity.ai" class="rounded-full border border-white/15 px-4 py-2 text-sm font-semibold transition-all duration-300 hover:border-lime hover:bg-lime hover:text-ink">Открыть сервис</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="relative isolate overflow-hidden border-b border-white/10">
+      <div class="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_75%_18%,rgba(182,243,91,.18),transparent_26%),linear-gradient(135deg,#101311_20%,#17201b_100%)]"></div>
+      <div class="absolute inset-0 -z-10 grid-noise opacity-40"></div>
+      <div class="mx-auto grid min-h-[760px] max-w-7xl items-center gap-14 px-6 pb-20 pt-36 lg:grid-cols-[1.05fr_.95fr] lg:px-8 lg:pb-24">
+        <div>
+          <p class="fade-up mb-7 flex items-center gap-3 text-sm font-semibold uppercase tracking-[.2em] text-lime"><span class="h-2 w-2 rounded-full bg-lime shadow-[0_0_16px_#b6f35b]"></span>Поиск нового поколения</p>
+          <h1 class="fade-up delay-1 max-w-4xl font-display text-5xl font-semibold leading-[.98] tracking-tight text-white sm:text-7xl lg:text-[5.5rem]">Не список ссылок.<br><span class="text-lime">Готовый ответ.</span></h1>
+          <p class="fade-up delay-2 mt-8 max-w-xl text-lg leading-8 text-stone-300">Perplexity — поисковый ИИ-движок, который изучает веб в реальном времени и дает точные ответы с источниками.</p>
+          <div class="mt-10 flex flex-col gap-3 sm:flex-row">
+            <a href="https://www.perplexity.ai" class="inline-flex items-center justify-center gap-2 rounded-full bg-lime px-6 py-3.5 font-bold text-ink transition-all duration-300 hover:bg-white hover:shadow-[0_0_30px_rgba(182,243,91,.25)]">Попробовать бесплатно <span aria-hidden="true">↗</span></a>
+            <a href="https://www.perplexity.ai/pro" class="inline-flex items-center justify-center gap-2 rounded-full border border-white/20 px-6 py-3.5 font-bold text-white transition-all duration-300 hover:border-lime hover:text-lime">Оформить Perplexity Pro <span aria-hidden="true">↗</span></a>
+          </div>
+          <p class="mt-5 text-sm text-stone-500">Базовый доступ бесплатен. Ответы всегда со ссылками на первоисточники.</p>
+        </div>
+        <div class="relative mx-auto w-full max-w-lg lg:ml-auto">
+          <div class="absolute -inset-5 rounded-[2rem] bg-lime/10 blur-3xl"></div>
+          <div class="relative overflow-hidden rounded-3xl border border-white/15 bg-[#19211c]/90 p-5 shadow-2xl backdrop-blur-xl sm:p-7">
+            <div class="mb-12 flex items-center justify-between text-xs text-stone-500"><span>perplexity.ai</span><span class="flex items-center gap-2"><span class="h-2 w-2 rounded-full bg-lime"></span>Поиск активен</span></div>
+            <div class="mb-7 rounded-2xl border border-white/10 bg-white/[.04] p-4 text-sm text-stone-200">Как изменился рынок электромобилей за последний год?</div>
+            <div class="mb-4 flex items-center gap-3 text-sm font-semibold text-lime"><span class="h-px w-8 bg-lime"></span>Собираю ответ из 18 источников</div>
+            <p class="text-lg leading-8 text-white">Мировые продажи электромобилей выросли, а доля доступных моделей продолжила увеличиваться...</p>
+            <div class="mt-7 flex flex-wrap gap-2"><span class="rounded-md bg-white/10 px-2.5 py-1 text-xs text-stone-300">IEA</span><span class="rounded-md bg-white/10 px-2.5 py-1 text-xs text-stone-300">Reuters</span><span class="rounded-md bg-white/10 px-2.5 py-1 text-xs text-stone-300">Bloomberg</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mx-auto max-w-7xl px-6 py-24 lg:px-8 lg:py-32">
+      <div class="grid gap-12 lg:grid-cols-[.8fr_1.2fr]">
+        <div><p class="mb-4 text-sm font-bold uppercase tracking-[.2em] text-lime">01 / Что такое Perplexity</p><h2 class="font-display text-4xl font-semibold tracking-tight text-white sm:text-5xl">Ваш вопрос.<br>Весь веб.</h2></div>
+        <div class="grid gap-10 sm:grid-cols-2"><div><p class="text-lg leading-8 text-stone-300">Perplexity совмещает веб-поиск в реальном времени с возможностями современных LLM. Он не просто находит страницы — читает их, сопоставляет факты и формулирует понятный ответ.</p></div><div><p class="mb-4 text-sm font-semibold text-white">Создан для тех, кто ценит время</p><p class="leading-7 text-stone-400">Студенты, исследователи, разработчики, аналитики, контент-мейкеры — и все, кому нужны быстрые факты без рекламы, SEO-мусора и десятка открытых вкладок.</p></div></div>
+      </div>
+    </section>
+
+    <section id="why" class="border-y border-white/10 bg-[#151a16]">
+      <div class="mx-auto max-w-7xl px-6 py-24 lg:px-8 lg:py-32">
+        <div class="mb-12 flex flex-col justify-between gap-5 sm:flex-row sm:items-end"><div><p class="mb-4 text-sm font-bold uppercase tracking-[.2em] text-lime">02 / Почему Perplexity</p><h2 class="font-display text-4xl font-semibold tracking-tight text-white sm:text-5xl">Меньше шума.<br>Больше смысла.</h2></div><p class="max-w-sm text-sm leading-6 text-stone-400">Один инструмент для поиска, проверки фактов и вдумчивого исследования.</p></div>
+        <div class="overflow-x-auto rounded-2xl border border-white/10"><table class="w-full min-w-[700px] border-collapse text-left text-sm"><thead><tr class="border-b border-white/10 text-stone-400"><th class="px-5 py-5 font-medium">Возможность</th><th class="bg-lime/10 px-5 py-5 font-bold text-lime">Perplexity</th><th class="px-5 py-5 font-medium">Google</th><th class="px-5 py-5 font-medium">Обычный ChatGPT</th></tr></thead><tbody class="divide-y divide-white/10"><tr><td class="px-5 py-5 text-stone-300">Ответ вместо списка ссылок</td><td class="bg-lime/5 px-5 py-5 font-semibold text-white">Да, с цитатами</td><td class="px-5 py-5 text-stone-500">Нужно искать самому</td><td class="px-5 py-5 text-stone-500">Да, но не всегда актуально</td></tr><tr><td class="px-5 py-5 text-stone-300">Данные в реальном времени</td><td class="bg-lime/5 px-5 py-5 font-semibold text-white">Всегда</td><td class="px-5 py-5 text-stone-300">Да</td><td class="px-5 py-5 text-stone-500">Зависит от режима</td></tr><tr><td class="px-5 py-5 text-stone-300">Прозрачные источники</td><td class="bg-lime/5 px-5 py-5 font-semibold text-white">100% ответов</td><td class="px-5 py-5 text-stone-500">Отдельная выдача</td><td class="px-5 py-5 text-stone-500">Иногда</td></tr><tr><td class="px-5 py-5 text-stone-300">Без SEO-спама</td><td class="bg-lime/5 px-5 py-5 font-semibold text-white">Фильтрация ИИ</td><td class="px-5 py-5 text-stone-500">Не всегда</td><td class="px-5 py-5 text-stone-300">Да</td></tr><tr><td class="px-5 py-5 text-stone-300">Несколько моделей в одном месте</td><td class="bg-lime/5 px-5 py-5 font-semibold text-white">Claude · GPT-4o · Sonar</td><td class="px-5 py-5 text-stone-500">Нет</td><td class="px-5 py-5 text-stone-500">Ограниченный выбор</td></tr></tbody></table></div>
+      </div>
+    </section>
+
+    <section id="features" class="mx-auto max-w-7xl px-6 py-24 lg:px-8 lg:py-32"><p class="mb-4 text-sm font-bold uppercase tracking-[.2em] text-lime">03 / Возможности</p><div class="mb-12 flex flex-col justify-between gap-5 sm:flex-row sm:items-end"><h2 class="font-display text-4xl font-semibold tracking-tight text-white sm:text-5xl">От первого вопроса<br>до готового вывода.</h2><p class="max-w-sm leading-7 text-stone-400">Инструменты, которые помогают не только найти информацию, но и разобраться в ней.</p></div><div class="grid gap-4 md:grid-cols-3"><article class="rounded-2xl border border-white/10 bg-white/[.04] p-7 transition-all duration-300 hover:-translate-y-1 hover:border-lime/40"><div class="mb-16 text-3xl text-lime">⌁</div><h3 class="mb-3 font-display text-2xl font-semibold text-white">Pro Search</h3><p class="leading-7 text-stone-400">Глубокий многошаговый поиск: ИИ разбивает сложный вопрос на части, изучает несколько источников и собирает связный результат.</p></article><article class="rounded-2xl border border-white/10 bg-white/[.04] p-7 transition-all duration-300 hover:-translate-y-1 hover:border-lime/40"><div class="mb-16 text-3xl text-lime">↳</div><h3 class="mb-3 font-display text-2xl font-semibold text-white">Документы под рукой</h3><p class="leading-7 text-stone-400">Загрузите PDF или изображение, чтобы быстро извлечь главное, сравнить данные или задать вопрос по содержимому.</p></article><article class="rounded-2xl border border-white/10 bg-white/[.04] p-7 transition-all duration-300 hover:-translate-y-1 hover:border-lime/40"><div class="mb-16 text-3xl text-lime">▦</div><h3 class="mb-3 font-display text-2xl font-semibold text-white">Collections</h3><p class="leading-7 text-stone-400">Организуйте треды и материалы по проектам: исследования, идеи, рабочие задачи — все остается в контексте.</p></article></div></section>
+
+    <section id="pricing" class="border-y border-white/10 bg-[#151a16]"><div class="mx-auto max-w-7xl px-6 py-24 lg:px-8 lg:py-32"><div class="mb-12"><p class="mb-4 text-sm font-bold uppercase tracking-[.2em] text-lime">04 / Тарифы</p><h2 class="font-display text-4xl font-semibold tracking-tight text-white sm:text-5xl">Начните бесплатно.<br>Переходите на Pro, когда нужно больше.</h2></div><div class="grid gap-4 lg:grid-cols-2"><article class="rounded-2xl border border-white/10 p-7 sm:p-9"><div class="flex items-start justify-between"><div><h3 class="font-display text-2xl font-semibold text-white">Free</h3><p class="mt-2 text-stone-400">Для ежедневных вопросов</p></div><p class="font-display text-3xl font-semibold text-white">₽0</p></div><ul class="my-10 space-y-4 text-stone-300"><li>✓ Неограниченные базовые запросы</li><li>✓ Доступ к основным возможностям</li><li>✓ Ответы с источниками</li></ul><a href="https://www.perplexity.ai" class="block rounded-full border border-white/20 py-3 text-center font-semibold transition-all duration-300 hover:border-lime hover:text-lime">Начать бесплатно</a></article><article class="relative overflow-hidden rounded-2xl border border-lime/50 bg-lime p-7 text-ink sm:p-9"><div class="absolute right-6 top-6 rounded-full bg-ink px-3 py-1 text-xs font-bold text-lime">Для серьезных задач</div><div class="flex items-start justify-between"><div><h3 class="font-display text-2xl font-semibold">Pro</h3><p class="mt-2 text-ink/70">Для работы и исследований</p></div><p class="font-display text-3xl font-semibold">Pro</p></div><ul class="my-10 space-y-4"><li>✓ Флагманские модели: Claude, GPT-4o, Sonar</li><li>✓ Увеличенные лимиты Pro Search</li><li>✓ Генерация изображений и загрузка файлов</li></ul><a href="https://www.perplexity.ai/pro" class="block rounded-full bg-ink py-3 text-center font-semibold text-white transition-all duration-300 hover:bg-white hover:text-ink">Оформить Perplexity Pro ↗</a></article></div></div></section>
+
+    <section class="relative overflow-hidden"><div class="absolute inset-0 bg-[radial-gradient(circle_at_50%_100%,rgba(182,243,91,.16),transparent_45%)]"></div><div class="relative mx-auto max-w-4xl px-6 py-28 text-center lg:py-36"><p class="mb-5 text-sm font-bold uppercase tracking-[.2em] text-lime">05 / Ваш следующий поиск</p><h2 class="font-display text-5xl font-semibold leading-tight tracking-tight text-white sm:text-7xl">Спросите.<br><span class="text-lime">Perplexity разберется.</span></h2><p class="mx-auto mt-7 max-w-xl text-lg leading-8 text-stone-300">Оставьте привычный поиск для простых задач. Для важных ответов откройте Perplexity.</p><div class="mt-10 flex flex-col justify-center gap-3 sm:flex-row"><a href="https://www.perplexity.ai" class="rounded-full bg-lime px-7 py-4 font-bold text-ink transition-all duration-300 hover:bg-white">Перейти на официальный сайт ↗</a><a href="https://www.perplexity.ai/pro" class="rounded-full border border-white/20 px-7 py-4 font-bold text-white transition-all duration-300 hover:border-lime hover:text-lime">Подписка Pro ↗</a></div></div></section>
+  </main>
+  <footer class="border-t border-white/10"><div class="mx-auto flex max-w-7xl flex-col gap-3 px-6 py-7 text-sm text-stone-500 sm:flex-row sm:items-center sm:justify-between lg:px-8"><span class="font-display font-bold text-stone-300">perplexity<span class="text-lime">.</span></span><span>Поиск, который экономит время.</span></div></footer>
+</body>
+</html>
